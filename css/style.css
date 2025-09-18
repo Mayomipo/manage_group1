@@ -3,3 +3,139 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: var(--Blue950);
+  /* background: url(../images/bg-tablet-pattern.svg); */
+  background-position: -60rem;
+}
+:root {
+  --Orange400: hsl(12, 88%, 59%);
+  --Blue950: hsl(228, 39%, 23%);
+  --Gray950: hsl(233, 12%, 13%);
+  --Orange50: hsl(13, 100%, 96%);
+  --Gray50: hsl(0, 0%, 98%);
+}
+header {
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 7px black;
+}
+
+.btn-primary {
+  background-color: var(--Orange400);
+  color: var(--Gray50);
+}
+
+.hero {
+  display: flex;
+  padding: 40px;
+}
+
+.hero-text {
+  padding-top:  50px;
+  flex: 1 1 500px;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+}
+
+.hero-text p {
+  margin-bottom: 35px;
+  color: var(--Gray950);
+  font-size: 1.5rem;
+}
+
+.hero-image {
+  flex: 2 1 500px;
+  padding-left: 50px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.intro {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+.features {
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    padding: 30px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Orange400);
+    color: white;
+    width: 25%;
+    height: 30px;
+    border-radius: 40%;
+    margin-right: 30px;
+}
+
+.icon {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 1.25rem;
+    color: #1e3a8a;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: var(--Gray950);
+    line-height: 1.5;
+}
