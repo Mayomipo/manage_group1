@@ -25,9 +25,14 @@ header {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--Blue950);
 }
-
+li {
+  transition: color 0.3s ease;
+}
+li:hover {
+  color: rgb(240, 231, 231);
+}
 ul {
   list-style: none;
   display: flex;
@@ -40,17 +45,27 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+#hamburger {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
 
 .btn {
   padding: 12px 20px;
   border-radius: 25px;
   font-weight: bold;
-  box-shadow: 0 2px 7px black;
-}
-
-.btn-primary {
+  box-shadow: 0 1px 2px  black;
+  transition: background-color 0.3s ease;
   background-color: var(--Orange400);
   color: var(--Gray50);
+}
+.btn:hover {
+    background-color: rgb(253, 137, 137);
+}
+.btn-primary {
+  background-color: var(--Orange400); 
+  color: var(--Gray50); 
 }
 
 .hero {
@@ -59,14 +74,15 @@ ul {
 }
 
 .hero-text {
-  padding-top:  50px;
+  padding-top: 50px;
   flex: 1 1 500px;
   padding-right: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .hero-text h1 {
   font-size: 3.2rem;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
@@ -77,10 +93,9 @@ ul {
 
 .hero-image {
   flex: 2 1 500px;
-  padding-left: 50px;
 }
 
-.container {
+.containers {
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -138,4 +153,269 @@ ul {
     font-size: 1rem;
     color: var(--Gray950);
     line-height: 1.5;
+}
+
+.review-section {
+    background-color: white;
+    padding: 50px;
+    padding-bottom:  2px;
+}
+.review {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 35px;
+    text-align: center;
+}
+
+.review div {
+    background-color: var(--Gray50);
+    padding: 15px;
+    color: var(--White);
+}
+
+.review-section h2 {
+  text-align: center;
+  padding: 40px;
+}
+.review-section p {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+}
+.review-section h3 {
+  position: relative;
+  bottom: 20px;
+}
+.review img {
+  width: 15%;
+  position: relative;
+  bottom: 40px;
+}
+.btn-secondary {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-top: 40px;
+}
+
+
+.simplify {
+    background-color: var(--Orange400);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 100px;
+}
+.simplify h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+#btn {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+#btn:hover {
+  background-color: rgb(247, 227, 227);
+}
+.simplify a {
+    text-decoration: none;
+    color: var(--Orange400);
+}
+
+footer {
+    background-color: var(--Gray950);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brands {
+    display: flex;
+    gap: 20px;
+}
+
+.first img {
+    color: white;
+}
+
+.second ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.second a {
+    text-decoration: none;
+    color: white;
+}
+
+.third ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.third a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: var(--Orange400);
+    border: none;
+}
+
+.paragraph {
+    color: var(--Gray50);
+    padding-top: 50px;
+}
+
+.fourth a {
+    text-decoration: none;
+    color: white;
+}
+
+.fourth input {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    border: 2px solid var(--Gray50);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--Orange400);
+}
+.pair {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.nav-link {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--Orange400); 
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: flex;
+        padding-bottom: 5px;
+    }
+    nav {
+      display: none;
+    }
+    .btn-pri {
+      display: none;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-image img{
+      width: 100%;
+    }
+    .hero-image {
+      width: 115%;
+      margin-bottom: -120px;
+    }
+    .hero-text {
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      /* line-height: 3.3rem; */
+    }
+    .hero p {
+      font-size: 1.3rem;
+    }
+    .containers {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .intro {
+      text-align: center;
+      margin-top: -120px;
+    }
+    .intro h2 {
+      font-size: 2.9rem;
+    }
+
+
+
+
+    /* ##DORA'S INPUT## */
+
+    footer {
+        flex-direction: column;
+    }
+    .first {
+        order: 2;
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .fourth {
+        order: -4;
+        text-align: center;
+    }
+    .pair {
+        display: flex;
+        padding-bottom: 40px;
+        gap: 100px;
+    }
+
+    .brands {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .simplify {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #btn {
+        padding: 10px 5px;
+        width: 50%;
+        position: relative;
+        right: -70px;
+    }
+
+    .simplify h2 {
+        font-size: 2.7rem;
+        text-align: center;
+    }
 }
