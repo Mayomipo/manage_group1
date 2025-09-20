@@ -375,9 +375,11 @@ input:focus {
     .review {
       display: flex;
       flex-direction: column;
+      margin-right: 45px;
+      width: 100%;
     }
     .btn-secondary {
-      width: 50%;
+      width: 200px;
     }
     .icon {
       width: 15vw;
@@ -391,6 +393,8 @@ input:focus {
 
 
     /* ##DORA'S INPUT## */
+
+
 
     footer {
         flex-direction: column;
